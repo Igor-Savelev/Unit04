@@ -1,6 +1,6 @@
 package by.ld.unit04.start;
 
-//Напишите консольное приложение – конвертер валют, при оформлении кода используйте процедурную декомпозицию.
+//ГЌЕ•ДЏДЌЕ™ДЌЕ€Дє Д™Г®Г­Е„Г®Г«ГјГ­Г®Дє ДЏД‘ДЌГ«Г®Д‡ДєГ­ДЌДє вЂ“ Д™Г®Г­ГўДєД‘Е€ДєД‘ ГўЕ•Г«ЕЈЕ€, ДЏД‘ДЌ Г®ГґГ®Д‘Д›Г«ДєГ­ДЌДЌ Д™Г®Г¤Е• ДЌЕ„ДЏГ®Г«ГјГ§ГіГ©Е€Дє ДЏД‘Г®Г¶ДєГ¤ГіД‘Г­ГіЕЈ Г¤ДєД™Г®Д›ДЏГ®Г§ДЌГ¶ДЌЕЈ.
 
 import java.util.Scanner;
 
@@ -9,12 +9,12 @@ public class Task02 {
 	public static void main(String[] args) {
 		Scanner sca = new Scanner(System.in);
 		
-		System.out.print("Введите сумму: ");
+		System.out.print("Г‚ГўДєГ¤ДЌЕ€Дє Е„ГіД›Д›Гі: ");
 		double a = sca.nextDouble();
 		
 		Scanner scb = new Scanner(System.in);
 		
-		System.out.print("Введите валюту rub, eur или dollar: ");
+		System.out.print("Г‚ГўДєГ¤ДЌЕ€Дє ГўЕ•Г«ЕЈЕ€Гі rub, eur ДЌГ«ДЌ dollar: ");
 		String b = scb.nextLine();
 
 		String rub = "rub";
@@ -22,22 +22,22 @@ public class Task02 {
 		String dollar = "dollar";
 		
 		if(b.equals(rub)) {
-			System.out.println("Сумма по курсу доллара = " + rub_dol(a));
-			System.out.println("Сумма по курсу евро = " + rub_eur(a));
+			System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі Г¤Г®Г«Г«Е•Д‘Е• = " + rub_dol(a));
+			System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі ДєГўД‘Г® = " + rub_eur(a));
 		}else {
 			if(b.equals(eur)) {
-				System.out.println("Сумма по курсу рубля = " + eur_rub(a));
-				System.out.println("Сумма по курсу доллара = " + eur_dol(a));
+				System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі Д‘ГіГЎГ«Л™ = " + eur_rub(a));
+				System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі Г¤Г®Г«Г«Е•Д‘Е• = " + eur_dol(a));
 			}else {
 				if(b.equals(dollar)) {
-					System.out.println("Сумма по курсу евро = " + dol_eur(a));
-					System.out.println("Сумма по курсу рублях = " + dol_rub(a));
+					System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі ДєГўД‘Г® = " + dol_eur(a));
+					System.out.println("ЕѓГіД›Д›Е• ДЏГ® Д™ГіД‘Е„Гі Д‘ГіГЎГ«Л™Е‘ = " + dol_rub(a));
 				}
 			}
 			}
 	}
 	
-	public static double rub_dol(double a) {
+	public static double rub_dol(double a) {// РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃРѕР±Р»СЋРґР°Р№С‚Рµ РїСЂР°РІРёР»Р° РёРјРµРЅРѕРІР°РЅРёСЏ РёРґРµРЅС‚РёС„РёРєР°С‚РѕСЂРѕРІ
 		double x=0;	
 		x = a / 71.43;
 		return x;
@@ -75,6 +75,6 @@ public class Task02 {
 	
 }
 
-
+// Р·Р°РґР°С‡Рё РјРѕРґСѓР»СЏ 4 Р·Р°С‡С‚РµРЅС‹
 
 
